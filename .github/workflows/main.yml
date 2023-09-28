@@ -1,0 +1,11 @@
+name: test-githubactions
+on: push
+jobs:
+  echo-input:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+           node-version: 18
+      
